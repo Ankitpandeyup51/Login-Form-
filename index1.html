@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Web1.css">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row min-vh-100 g-0">
+
+            <!-- ================= LEFT IMAGE ================= -->
+            <div class="col-lg-6 d-none d-lg-block">
+
+                <div class="bg-holder"
+                     style="background-image: url('images/pr.jpeg');">
+                </div>
+
+            </div>
+
+            <!-- ================= RIGHT LOGIN ================= -->
+            <div class="col-lg-6">
+
+                <div class="login-section">
+
+                    <div class="login-box">
+
+                        <!-- Logo -->
+                        <a href="#"
+                           class="d-flex justify-content-center mb-4">
+
+                            <img src="images/logo1.png"
+                                 alt="Logo"
+                                 width="70">
+
+                        </a>
+
+                        <!-- Heading -->
+                        <div class="text-center mb-4">
+
+                            <h1 class="fw-bold">
+                                Log In
+                            </h1>
+
+                            <p class="text-secondary">
+                                Get access to your account
+                            </p>
+
+                        </div>
+
+
+                        <!-- ================= SOCIAL LOGIN ================= -->
+
+                        <button type="button"
+                                class="btn btn-outline-secondary btn-lg w-100 mb-3">
+
+                            <i class='bx bxl-google text-danger me-2'></i>
+
+                            Login with Google
+
+                        </button>
+
+                        <button type="button"
+                                class="btn btn-outline-secondary btn-lg w-100">
+
+                            <i class='bx bxl-facebook text-primary me-2'></i>
+
+                            Login with Facebook
+
+                        </button>
+
+
+                        <!-- ================= DIVIDER ================= -->
+
+                        <div class="position-relative my-4">
+
+                            <hr class="text-secondary">
+
+                            <div class="divider-content-center">
+                                Or
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= LOGIN FORM ================= -->
+
+                        <form id="loginForm">
+
+                            <!-- Login ID -->
+                            <div class="input-group mb-3">
+
+                                <span class="input-group-text">
+                                    <i class='bx bx-user'></i>
+                                </span>
+
+                                <input type="text"
+                                       id="loginId"
+                                       class="form-control form-control-lg"
+                                       placeholder="Login ID"
+                                       required>
+
+                            </div>
+
+
+                            <!-- Password -->
+                            <div class="input-group mb-3">
+
+                                <span class="input-group-text">
+                                    <i class='bx bx-lock-alt'></i>
+                                </span>
+
+                                <input type="password"
+                                       id="password"
+                                       class="form-control form-control-lg"
+                                       placeholder="Password"
+                                       required>
+
+                            </div>
+
+
+                            <!-- Show Password -->
+                            <div class="form-check mb-3">
+
+                                <input type="checkbox"
+                                       class="form-check-input"
+                                       id="showPassword"
+                                       onclick="showPass()">
+
+                                <label class="form-check-label text-secondary"
+                                       for="showPassword">
+
+                                    Show Password
+
+                                </label>
+
+                            </div>
+
+
+                            <!-- Remember + Forgot Password -->
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <div class="form-check">
+
+                                    <input type="checkbox"
+                                           class="form-check-input"
+                                           id="rememberMe">
+
+                                    <label class="form-check-label text-secondary"
+                                           for="rememberMe">
+
+                                        <small>
+                                            Remember Me
+                                        </small>
+
+                                    </label>
+
+                                </div>
+
+                                <div>
+
+                                    <small>
+                                        <a href="#">
+                                            Forgot Password?
+                                        </a>
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Error Message -->
+                            <div id="errorMessage"
+                                 class="alert alert-danger d-none">
+
+                                Invalid Login ID or Password!
+
+                            </div>
+
+
+                            <!-- Success Message -->
+                            <div id="successMessage"
+                                 class="alert alert-success d-none">
+
+                                Login Successful!
+
+                            </div>
+
+
+                            <!-- Login Button -->
+                            <button type="submit"
+                                    class="btn btn-primary btn-lg w-100 mb-3">
+
+                                <i class='bx bx-log-in me-1'></i>
+                                Login
+
+                            </button>
+
+                        </form>
+
+
+                        <!-- ================= SIGN UP ================= -->
+
+                        <div class="text-center">
+
+                            <small>
+
+                                Don't have an account?
+
+                                <a href="#" class="fw-bold">
+                                    Sign Up
+                                </a>
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        // Demo Login Credentials
+        const validLoginId = "admin";
+        const validPassword = "Admin@123";
+
+
+        // Login Function
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const loginId = document.getElementById("loginId").value;
+            const password = document.getElementById("password").value;
+
+            const errorMessage = document.getElementById("errorMessage");
+            const successMessage = document.getElementById("successMessage");
+
+
+            // Hide messages
+            errorMessage.classList.add("d-none");
+            successMessage.classList.add("d-none");
+
+
+            // Check Login ID and Password
+            if (loginId === validLoginId && password === validPassword) {
+
+                successMessage.classList.remove("d-none");
+
+                // Open Dashboard after 1 second
+                setTimeout(function () {
+
+                    window.location.href = "Dashboard.html";
+
+                }, 1000);
+
+            }
+            else {
+
+                errorMessage.classList.remove("d-none");
+
+            }
+
+        });
+
+
+        // Show / Hide Password
+        function showPass() {
+
+            const password = document.getElementById("password");
+
+            if (password.type === "password") {
+
+                password.type = "text";
+
+            }
+            else {
+
+                password.type = "password";
+
+            }
+
+        }
+
+    </script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
+

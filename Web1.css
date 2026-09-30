@@ -1,0 +1,160 @@
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   LEFT IMAGE
+========================= */
+
+.bg-holder {
+    width: 100%;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================
+   RIGHT LOGIN SECTION
+========================= */
+
+.login-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 30px;
+
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   LOGIN BOX
+========================= */
+
+.login-box {
+    width: 100%;
+    max-width: 430px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.login-box img {
+    object-fit: contain;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+.login-box h1 {
+    font-size: 36px;
+    color: #222;
+}
+
+.login-box p {
+    font-size: 15px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.login-box .btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group-text {
+    background-color: #fff;
+    border-right: none;
+}
+
+.input-group .form-control {
+    border-left: none;
+}
+
+.input-group:focus-within .input-group-text,
+.input-group:focus-within .form-control {
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider-content-center {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+
+    padding: 0 15px;
+
+    color: #6c757d;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .login-section {
+        min-height: 100vh;
+        padding: 30px 20px;
+    }
+
+    .login-box {
+        max-width: 450px;
+    }
+
+}
