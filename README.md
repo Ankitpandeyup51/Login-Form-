@@ -28,6 +28,8 @@ The main focus of this project was to create an attractive UI, responsive layout
 • JavaScript
 
 #Output
+
+
 <img width="577" height="357" alt="Screenshot 2026-10-01 182426" src="https://github.com/user-attachments/assets/5f0eeefb-c911-4828-9949-5ce4627daae3" />
 
 
