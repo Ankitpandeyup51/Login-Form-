@@ -16,11 +16,17 @@ The main focus of this project was to create an attractive UI, responsive layout
 =============================================================================================================================
 
 🔐 Clean Login Interface 
+
 📱 Fully Responsive Design 
+
 🎨 Modern & Attractive UI 
+
 💻 Mobile-Friendly Layout 
+
 ✨ Simple & User-Friendly Design 
+
 ⚡ Smooth & Professional Look
+=============================================================================================================================
 
 🛠️ Technologies Used
 =============================================================================================================================
@@ -31,6 +37,7 @@ The main focus of this project was to create an attractive UI, responsive layout
 • Bootstrap 5 
 
 • JavaScript
+=============================================================================================================================
 
 #Output Screenshot
 =============================================================================================================================
