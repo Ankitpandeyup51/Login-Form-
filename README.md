@@ -1,27 +1,28 @@
-🚀 **RESPONSIVE LOGIN FORM | FRONTEND DESIGN** 🔐
 
- **Frontend Design Project – Responsive Login Form**! 💻
+🚀 RESPONSIVE LOGIN FORM | FRONTEND DESIGN 🔐
 
-I designed a **modern, clean, and responsive Login Form** with a user-friendly interface and mobile-friendly layout.
+Frontend Design Project – Responsive Login Form! 💻
 
-### 📝 Project Description
+I designed a modern, clean, and responsive Login Form with a user-friendly interface and mobile-friendly layout.
 
-This project is a **responsive web-based Login Form** designed to provide a simple, clean, and professional user experience. The interface includes essential login elements with a modern layout that adapts smoothly to different screen sizes and devices.
+📝 Project Description
 
-The main focus of this project was to create an **attractive UI, responsive layout, proper form structure, and user-friendly design** using modern frontend technologies.
+This project is a responsive web-based Login Form designed to provide a simple, clean, and professional user experience. The interface includes essential login elements with a modern layout that adapts smoothly to different screen sizes and devices.
 
-### 🎨 Design Highlights
+The main focus of this project was to create an attractive UI, responsive layout, proper form structure, and user-friendly design using modern frontend technologies.
 
-🔐 Clean Login Interface
-📱 Fully Responsive Design
-🎨 Modern & Attractive UI
-💻 Mobile-Friendly Layout
-✨ Simple & User-Friendly Design
+🎨 Design Highlights
+
+🔐 Clean Login Interface 
+📱 Fully Responsive Design 
+🎨 Modern & Attractive UI 
+💻 Mobile-Friendly Layout 
+✨ Simple & User-Friendly Design 
 ⚡ Smooth & Professional Look
 
-### 🛠️ Technologies Used
+🛠️ Technologies Used
 
-• HTML5
-• CSS3
-• Bootstrap 5
+• HTML5 
+• CSS3 
+• Bootstrap 5 
 • JavaScript
