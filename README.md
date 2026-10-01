@@ -25,11 +25,14 @@ The main focus of this project was to create an attractive UI, responsive layout
 🛠️ Technologies Used
 =============================================================================================================================
 • HTML5 
+
 • CSS3 
+
 • Bootstrap 5 
+
 • JavaScript
 
-#Output
+#Output Screenshot
 =============================================================================================================================
 
 
